@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .MD{
+            border: 2px solid;
+        }
+        .img1,.img2{
+            position: absolute;
+        }
+        .img2{
+            left: 200px;
+            top: 30px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="MD">
+        <div class="img1"><img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210326121134_VW_Polo_Cup_front.jpg&w=726&h=482&q=75&c=1"></div>
+        <div class="img2"><h1 style="color: white;">My Car</h1></div>
+    </div>
+</body>
+</html>
