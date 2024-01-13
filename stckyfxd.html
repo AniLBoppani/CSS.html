@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Fixed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .hlst{
-            display: inline;
+        li{
+            display: inline-block;
+            margin-left: 30px;
+            font-size: 30px;
+        }
+        .hd{
+            margin-left: 400px;
+            position: sticky;
+        }
+        .fa{
+            background-color: blue;
+            padding: 10px;
+            border-radius: 100px;
+            margin-top: 1000px;
+            margin-left: 1700px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="MD">
         <div class="hd">
-            <img src="https://media.licdn.com/dms/image/C510BAQGolIxX2U0r1Q/company-logo_200_200/0/1630611606676/10000_coders_logo?e=2147483647&v=beta&t=TKroGNQW58Dlgp73ev32A1zNBMSNwWsID-szuyThXaI">
+            <ul>
+                <div class="lgo"><img src="https://media.licdn.com/dms/image/C510BAQGolIxX2U0r1Q/company-logo_200_200/0/1630611606676/10000_coders_logo?e=2147483647&v=beta&t=TKroGNQW58Dlgp73ev32A1zNBMSNwWsID-szuyThXaI" height="300px" width="300px"></div>
+                <li><a href="" style="text-decoration: none;">Home</a></li>
+                <li><a href=""style="text-decoration: none;">Why</a></li>
+                <li><a href=""style="text-decoration: none;">Curriculum</a></li>
+                <li><a href=""style="text-decoration: none;">Team</a></li>
+                <li><a href=""style="text-decoration: none;">Employers</a></li>
+                <li><a href=""style="text-decoration: none;">Admission</a></li>
+                <li><a href=""style="text-decoration: none;">Price</a></li>
+                <li><a href=""style="text-decoration: none;">FAQ</a></li>
+            </ul>
         </div>
-        <div class="hlst">Home</div>
-        <div>Why</div>
-        <div>Curriculum</div>
-        <div>Team</div>
-        <div>Employers</div>
-        <div>Admission</div>
-        <div>Price</div>
-        <div>FAQ</div>    
+        <div>
+            <i class="fa fa-comments" style="font-size:70px;color:white"></i>
         </div>
     </div>
 </body>
