@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        .clr{
+            border: 2px solid;
+            height: 500px;
+            width: 500px;
+        }
+        #blk:checked~.clr{
+            background-color: black;
+        }
+        #prpl:checked~.clr{
+            background-color: purple;
+        }
+        #blu:checked~.clr{
+            background-color: blue;
+        }
+        #grn:checked~.clr{
+            background-color: green;
+        }
+        .PE::first-letter{
+            color: darkblue;
+        }
+        .par::first-line{
+            color: darksalmon;
+        }
+        li::marker{
+            color: indigo;
+        } 
+        .par::selection{
+            background-color: yellow;
+        }
+        .aftr::after{
+            content:"Development";
+        }
+        .bfr::before{
+            content:"Welcome";
+        }
+    </style>
+</head>
+<body>
+    <input id="blk" type="radio">Black
+    <input id="prpl" type="checkbox">Purple
+    <input id="blu" type="radio">Blue
+    <input id="grn" type="checkbox">Green
+    <div class="clr"></div>
+    <div>
+        <p class="PE">Pseudo Elements</p>
+        <p class="par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nam vel sequi modi quisquam? Quis praesentium, tempore ullam et, excepturi aperiam obcaecati possimus veritatis rem fugiat dignissimos placeat illum asperiores?</p>
+        <ol>
+            <li>Html</li>
+            <li>Css</li>
+            <li>JS</li>
+        </ol>
+        <p class="aftr">Welcome To Front End </p>
+        <p class="bfr"> To Front End Development</p>
+    </div>
+</body>
+</html>
